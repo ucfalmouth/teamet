@@ -137,4 +137,6 @@
   .alignRight {
     float:right;
   }
-  
+  #msnrycntnr {
+    max-width:1040px;
+  }
