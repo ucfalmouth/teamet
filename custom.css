@@ -1,142 +1,34 @@
-/*custom header */
-.nav-wrapper {
-  width: 100%;
-  position: absolute;
-  z-index: 100;
-}
-
-.nav {
-  padding: 32px 20px 32px 20px;
-  padding: 2rem 1.25rem 2rem 1.25rem;
-  max-width: 880px;
-  position: relative;
-  margin: 0 auto;
-}
-
-.nav__brand {
-  float: left;
-  color: #fff;
-  font-family: "brandon-grotesque";
-  font-size: 21px;
-  font-size: 1.3125rem;
-  text-decoration: none;
-}
-@media (max-width: 700px) {
-  .nav__brand {
-    text-align: center;
-    display: block;
-    width: 100%;
-  }
-}
-
-.nav__brand:hover {
-  color: white;
-}
-
-.nav__menu {
-  float: right;
-  list-style: none;
-}
-@media (max-width: 700px) {
-  .nav__menu {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
-  }
-}
-
-.nav__menu-item, .nav__menu-item--active {
-  display: inline;
-  padding: 0 0 0 12px;
-  padding: 0 0 0 0.75rem;
-}
-.nav__menu-item a, .nav__menu-item--active a {
-  font-weight: 300;
-  padding: 4px 12px;
-  padding: 0.25rem 0.75rem;
-  -webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  -ms-border-radius: 400px;
-  -o-border-radius: 400px;
-  border-radius: 400px;
-  color: white;
-  text-decoration: none;
-}
-.nav__menu-item a:hover, .nav__menu-item--active a:hover {
-  color: #008cba;
-  background: #f0f0f0;
-}
-
-.nav__menu-item--active a {
-  padding: 4px 12px;
-  padding: 0.25rem 0.75rem;
-  -webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  -ms-border-radius: 400px;
-  -o-border-radius: 400px;
-  border-radius: 400px;
-  background: #008cba;
-  color: #fff;
-  font-weight: 300;
-}
-.nav__menu-item--active a:hover {
-  background: #008cba;
-  color: #fff;
-}
-
-.nav__menu-item--hidden {
+/*Removes tags from posts */
+.attribution-tags {
   display: none;
 }
-.teamimg {-webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  -ms-border-radius: 400px;
-  -o-border-radius: 400px;
-  border-radius: 400px;}
-  /* Custom CSS */
-  {CustomCSS}
-  p.centreimg {text-align: center;}
-  .tag-about img.teamimg, .post-footer {display:none}
 
-  /*Removes tags from posts */
-  .attribution-tags {
-    display: none;
-  }
-
-  /*Removes tags from posts */
-  .attribution-tags {
-    display: none;
-  }
-
-  /* Sticky footer*/
-  * {
-    margin: 0;
-  }
-  html, body {
-    height: 100%;
-  }
-  .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -4%;
-  }
-  .push {
-    height: 4%;
-  }
-  .footer {
-    clear: both;
-    height: 20%;
-    padding: 4% 20% 4% 20% ;
-    background-color:#1E2422;
-  }
-  .alignLeft {
-    float:left;
-    color: #F6F6F6;
-  }
-  .alignRight {
-    float:right;
-  }
-  #msnrycntnr {
-    max-width:1040px;
-  }
+/* Sticky footer*/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4%;
+}
+.push {
+  height: 4%;
+}
+.footer {
+  clear: both;
+  height: 20%;
+  padding: 4% 20% 4% 20% ;
+  background-color:#1E2422;
+}
+.alignLeft {
+  float:left;
+  color: #F6F6F6;
+}
+.alignRight {
+  float:right;
+}
