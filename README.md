@@ -1,2 +1,1 @@
-This is a fork of the Optica Tumblr theme.
-
+This is a fork of the Optica Tumblr theme. DEC14
