@@ -6,11 +6,11 @@
 }
 
 .nav {
-  padding: 32px 20px 32px 20px;
-  padding: 2rem 1.25rem 2rem 1.25rem;
-  max-width: 880px;
-  position: relative;
-  margin: 0 auto;
+    padding: 32px 20px 32px 20px;
+    padding: 2rem 1.25rem 2rem 1.25rem;
+    max-width: 880px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .nav__brand {
@@ -28,6 +28,8 @@
     width: 100%;
   }
 }
+
+
 
 .nav__brand:hover {
   color: white;
@@ -89,54 +91,62 @@
   display: none;
 }
 .teamimg {-webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  -ms-border-radius: 400px;
-  -o-border-radius: 400px;
-  border-radius: 400px;}
-  /* Custom CSS */
-  {CustomCSS}
-  p.centreimg {text-align: center;}
-  .tag-about img.teamimg, .post-footer {display:none}
+-moz-border-radius: 400px;
+-ms-border-radius: 400px;
+-o-border-radius: 400px;
+border-radius: 400px;}
+            /* Custom CSS */
+            {CustomCSS}
+p.centreimg {text-align: center;}
+.tag-about img.teamimg, .post-footer {display:none}
 
-  /*Removes tags from posts */
-  .attribution-tags {
+/*Removes tags from posts */
+.attribution-tags {
     display: none;
-  }
+}
 
-  /*Removes tags from posts */
-  .attribution-tags {
+/*Removes tags from posts */
+.attribution-tags {
     display: none;
-  }
+}
 
-  /* Sticky footer*/
-  * {
-    margin: 0;
-  }
-  html, body {
-    height: 100%;
-  }
-  .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -4%;
-  }
-  .push {
-    height: 4%;
-  }
-  .footer {
-    clear: both;
-    height: 20%;
-    padding: 4% 20% 4% 20% ;
-    background-color:#1E2422;
-  }
-  .alignLeft {
+/* Sticky footer*/
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4%;
+}
+.push {
+height: 4%;
+}
+.footer {
+clear: both;
+height: 20%;
+padding: 4% 20% 4% 20% ;
+background-color:#1E2422;
+}
+.alignLeft {
     float:left;
     color: #F6F6F6;
-  }
-  .alignRight {
+}
+.alignRight {
     float:right;
-  }
-  #msnrycntnr {
+}
+#msnrycntnr {
     max-width:1040px;
-  }
+}
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+  width: 20px;
+  height: 20px;
+  padding: 6px 27px;
+  min-width: 13px;
+  margin-top: 2px;
+}

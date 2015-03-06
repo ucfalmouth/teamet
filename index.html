@@ -163,7 +163,6 @@
   })();
 
 </script>
-
     </head>
     <body data-urlencoded-name="{URLEncodedName}" class="{select:Layout}{block:IndexPage} index-page{/block:IndexPage}{block:PermalinkPage} permalink{/block:PermalinkPage}{block:SearchPage} search-page{block:NoSearchResults} no-results{/block:NoSearchResults}{/block:SearchPage} {block:TagPage}tag-{Tag}{/block:TagPage}">
         <section id="page">
@@ -172,10 +171,12 @@
               <div class="nav">
                 <a href="http://teamet.tumblr.com/" class="nav__brand">Educational Technology</a>
                 <ul class="nav__menu">
-                  <li class="nav__menu-item"><a href="http://teamet.tumblr.com/tagged/about">About Us</a></li>
-                  <li class="nav__menu-item"><a href="http://teamet.tumblr.com">Blog</a></li>
-                  <li class="nav__menu-item"><a href="http://etprojects.tumblr.com/">Projects</a></li>
-                  <li class="nav__menu-item"><a href="/archive">{lang:Archive}</a></li>
+                    <li class="nav__menu-item"><a href="#gsearch">Search</a></li>
+                  <!--<li class="nav__menu-item"><a href="http://teamet.tumblr.com/tagged/about">About</a></li>-->
+                  <!--<li class="nav__menu-item"><a href="http://teamet.tumblr.com">Blog</a></li>-->
+                  <!--<li class="nav__menu-item"><a href="http://etprojects.tumblr.com/">Projects</a></li>-->
+                  <!--<li class="nav__menu-item"><a href="/archive" class="archive">{lang:Archive} <i class="icon-arrow_carrot_right"></i></a>-->
+                  <!--              </li>-->
                   {block:HasPages}
                   {block:Pages}
                   <li class="nav__menu-item">
@@ -219,7 +220,13 @@
                             <li><a href="http://teamet.tumblr.com/tagged/study">Study</a></li>
                             <li><a href="http://teamet.tumblr.com/tagged/change">Change</a></li>
                             <li><a href="http://teamet.tumblr.com/tagged/feedback">Feedback</a></li>
-
+                  {block:HasPages}
+                   | {block:Pages}
+                  <li class="">
+                    <a href="{URL}" class="">{Label}</a>
+                  </li>
+                  {/block:Pages}
+                  {/block:HasPages}
                         </ul>
                     </div>
 
@@ -513,6 +520,7 @@
                     {/block:Posts}
                 </div>
             </section>
+
           </div>
             <footer id="footer" class="content clearfix">
                 {block:IndexPage}
@@ -529,6 +537,7 @@
                     {/block:Pagination}
                 {/block:IndexPage}
             </footer>
+
         </section>
         <script>
             var Optica = {};
@@ -542,6 +551,7 @@
         <script>!window.jQuery && document.write(unescape('%3Cscript src="http://static.tumblr.com/vr9xgox/sBgmmjhyw/jquery-1.9.1.min.js"%3E%3C/script%3E'));</script>
         <script src="http://static.tumblr.com/vr9xgox/Azhmnml1q/jquery.masonry.min.js"></script>
         <script src="http://static.tumblr.com/ehm1tdz/TyFmu1xus/main-min.js"></script>
+        <script src="http://static.tumblr.com/tmgi8vh/CVZnk0ww7/moment.min.js"></script>
 
         {block:IfGoogleAnalyticsID}
             <script>
@@ -561,19 +571,34 @@
 
   _gs('GSN-300776-U');
 </script>
+
 <!-- Sticky Footer !-->
 <div class="push"></div>
+<iframe frameborder="0" height="500" src="http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AvmEMMMM3JvBdERPNVFDbTJoWDZWdE1nb3FjNDYxN1E#gid&amp;font=Bevan-PotanoSans&amp;maptype=toner&amp;lang=en&amp;start_at_end=true&amp;height=250" width="100%"></iframe>
 </div>
 <div class="footer">
-  <p class="alignLeft" font-color="#1E2422">Educational Technology
-    <br/><a href="http://teamet.tumblr.com/tagged/about">About Us</a>
-    <br/><a href="http://etprojects.tumblr.com">Projects</a>
-    <br/><br/><br/><a href="https://www.google.co.uk/maps/place/8+Tremough+Barton+Cottages,+Penryn,+Cornwall+TR10+9EZ/@50.1687472,-5.1257655,17z/data=!3m1!4b1!4m2!3m1!1s0x486b236dd2365ec5:0x1c293ed7e9037ea4"><img src="https://cdn0.iconfinder.com/data/icons/weboo-2/128/pin.png" style="width:25px; height:25px"></a>8, Tremough Barton Cottages. Falmouth University TR10 9EZ</p>
-    <p class="alignRight"><a href="http://twitter.com/et_falmouth"><img src="https://g.twimg.com/Twitter_logo_blue.png" style="width:31px; height:25px"></a></p>
-<!-- time line code -->
-<iframe frameborder="0" height="650" src="http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AvmEMMMM3JvBdERPNVFDbTJoWDZWdE1nb3FjNDYxN1E&amp;font=Bevan-PotanoSans&amp;maptype=toner&amp;lang=en&amp;height=650" width="100%"></iframe>
-<!-- End time line code -->
+  <div class="alignLeft" font-color="#1E2422">Educational Technology
+    <!--<br/><a href="http://teamet.tumblr.com/tagged/about">About Us</a>-->
+    <!--<br/><a href="http://etprojects.tumblr.com">Projects</a>-->
+    <br/><a href="/archive" class="archive">{lang:Archive}</a>
+    <div id"gsearch"><script>
+  (function() {
+    var cx = '000631896668197046289:db6dpnnx66q';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div></div>
+    <div class="alignRight"><a href="http://twitter.com/et_falmouth"><img src="https://g.twimg.com/Twitter_logo_blue.png" style="width:31px; height:25px"></a><p><a href="https://www.google.co.uk/maps/place/8+Tremough+Barton+Cottages,+Penryn,+Cornwall+TR10+9EZ/@50.1687472,-5.1257655,17z/data=!3m1!4b1!4m2!3m1!1s0x486b236dd2365ec5:0x1c293ed7e9037ea4"><img src="https://cdn0.iconfinder.com/data/icons/weboo-2/128/pin.png" style="width:25px; height:25px"></a>8, Tremough Barton Cottages. Falmouth University TR10 9EZ</p></div>
+
   </div>
   <!-- End of Sticky Footer !-->
+
+
     </body>
 </html>
